@@ -1,0 +1,44 @@
+.boxed{
+    display: inline-block;
+    border-left: 10px dotted #D0D0FF;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    background-color: #eeeff2;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.boxed p{
+    font: 40px Tahoma;
+    margin-inline-start: 10px;
+    margin-block-start: 10px;
+}
+
+.boxed-right{
+    display: inline-block;
+    border-left: 10px dotted #D0D0FF;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    background-color: #eeeff2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.boxed-right p{
+    font: 40px Tahoma;
+    margin-inline-start: 10px;
+    margin-block-start: 10px;
+}
+
+.boxed:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.boxed-right:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
