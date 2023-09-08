@@ -36,9 +36,11 @@
 .boxed:hover{
     cursor: pointer;
     background-color: yellow;
+    color: goldenrod;
 }
 .boxed-right:hover{
     cursor: pointer;
-    background-color: goldenrod;
+    background-color: yellow;
+    color: goldenrod;
 }
 
