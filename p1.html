@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P1 HTML</title>
     <link rel="stylesheet" href="styleB.css" />
+    <link rel="stylesheet" href="styleC.css" />
 </head>
 <body>
 <!-- This is the Letters inside boxes. The boxes currently do not show up. I will add more changes as we go along.
      The letters A-F do show within the page when opened. I will also add the links for the stylesheets once made -->
-    <div class = "container">
+        <div class="slide-element"></div>
+        <div class = "container">
         <div class="boxed">
             <p>A</p>
         </div>
@@ -29,5 +31,30 @@
             <p>F</p>
         </div>
     </div>
+    <svg viewBox="0 0 960 500">
+        <!--viewBox is an attribute that specifies the coordinate system of the SVG content.
+        In this case, it's set to "0 0 960 500," which means the SVG canvas has a width of 960 units and a height of 500 units. -->
+        <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="40%">PROJECT. </text>
+            <text text-anchor="middle" x="80%" y="80%">ONE. </text>
+
+        </symbol>
+        <!--Inside the <symbol>, there are two <text> elements that define text elements. They are positioned with x and y attributes,
+        and text-anchor is set to "middle" to horizontally center the text.-->
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+    <!-- <g> is a grouping element that can be used to group the SVG elements together.
+class="g-ants" assigns a class name to this <g> element.
+Inside the <g> element, there are five <use> elements. These <use> elements reference the symbol with the xlink:href attribute, and the referenced symbol is "s-text." Each <use> element duplicates the content of the "s-text" symbol.
+class="text-copy" is assigned to each <use> element.
+ Some useful Links that helped me get here:https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath
+ https://alvarotrigo.com/blog/css-text-animations/
+ https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths-->
 </body>
 </html>

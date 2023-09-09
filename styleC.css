@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    background: radial-gradient(circle, #A1C4FD,#C2E9FB);
+    /** Radial gradients create a central focal point where the color is most
+    concentrated and then gradually fade out toward the edges. */
+}
+
+html, body{
+    height: 100%;
+    font-weight: 800;
+}
+
+body{
+
+    font-family: 'Krona One', sans-serif;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy { /** .text-copy is a CSS class selector applied to multiple elements.*/
+    fill: none; /**fill: none; specifies that the text elements should not have a fill.*/
+    stroke: #FDFFFC; /**stroke: #FDFFFC; sets the stroke color of the text elements to a light color (#FDFFFC).*/
+    stroke-dasharray: 6% 29%; /**stroke-dasharray: 6% 29%; defines a pattern for the dashed stroke. It creates a dash pattern where the dashes are 6% of the path length, and the gaps between dashes are 29% of the path length.*/
+    stroke-width: 5px; /**stroke-width: 5px; sets the width of the stroke lines to 5 pixels.*/
+    stroke-dashoffset: 0; /**stroke-dashoffset: 0%; sets the initial position of the stroke dash offset to 0%, meaning the dashes are initially aligned with the path.*/
+    animation: stroke-offset 5.5s infinite linear; /**animation-delay is used to stagger the start of the animation for each text element. Negative values like -1s, are used to create the stagger effect.**/
+}
+.text-copy:nth-child(1){
+    stroke: #235789;
+    animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+    stroke: #FDFFFC;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+    stroke: #F1D302;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+    stroke: #020100 ;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+    stroke: #EB4511;
+    animation-delay: -5s;
+}
+/**@keyframes defines a custom animation named stroke-offset.
+Inside the keyframes, stroke-dashoffset is animated from its initial value of 0% to its final value of -35%.
+ This animation creates the effect of the dashed strokes moving along the path.*/
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+}
+
