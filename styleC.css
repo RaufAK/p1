@@ -62,4 +62,27 @@ Inside the keyframes, stroke-dashoffset is animated from its initial value of 0%
 @keyframes stroke-offset{
     100% {stroke-dashoffset: -35%;}
 }
+div.boxed{
+    display: inline-block;
+    border-left: 10px dotted #D0D0FF;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Bebas-Neue', sans-serif;
+    font-style: italic;
+    color: red;
+}
+div.boxed-right{
+    display: inline-block;
+    border-left: 10px dotted #D0D0FF;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Times New Roman', sans-serif;
+    font-style: italic;
+    color: forestgreen;
+
+}
 
