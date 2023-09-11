@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Bebas-Neue);
 
 body {
     background: radial-gradient(circle, #A1C4FD,#C2E9FB);
@@ -13,12 +13,12 @@ html, body{
 
 body{
 
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Bebas-Neue', sans-serif;
 }
 
 svg {
     display: block;
-    font: 10.5em 'Montserrat';
+    font: 10.5em 'Bebas-Neue';
     width: 960px;
     height: 300px;
     margin: 0 auto;
